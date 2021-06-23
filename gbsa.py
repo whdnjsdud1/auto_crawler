@@ -109,7 +109,7 @@ def gbsa_cralwer():
                 content_list.append(content)
 
             # 드라이버 종료
-            driver.quit()
+            # driver.quit()
 
         # 검색 단어명으로 엑셀 저장
         naver_info_df = {"content_list": content_list, "date_list": date_list,

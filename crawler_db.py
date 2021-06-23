@@ -14,10 +14,10 @@ def crawling_info_db():
     pymysql.install_as_MySQLdb()
     import MySQLdb
 
-    server_ip_address = 'chorock-1.cyurhelnwurz.ap-northeast-2.rds.amazonaws.com'
-    database_id = 'admin'
-    database_password = 'admin123'
-    schema_name = 'chorock_schema'
+    server_ip_address = 'chorock-test-2.cyurhelnwurz.ap-northeast-2.rds.amazonaws.com'
+    database_id = 'chorock'
+    database_password = 'chfhr123'
+    schema_name = 'chorock_db'
     engine = create_engine("mysql+mysqldb://{database_id}:{database_password}@{server_ip_address}/{schema_name}?charset=utf8mb4"\
                            .format(database_id=database_id, database_password=database_password, server_ip_address=server_ip_address,
                                    schema_name=schema_name))
